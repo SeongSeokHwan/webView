@@ -12,16 +12,15 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class Fragment_2 extends Fragment {
+public class Fragment_home extends Fragment {
     WebView mWebView;
     WebSettings mWebSettings;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment__2, container, false);
-        WebView webView = view.findViewById(R.id.web2);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        View view = inflater.inflate(R.layout.fragment__home, container, false);
+        WebView webView = view.findViewById(R.id.web1);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl("https://www.google.co.kr/");

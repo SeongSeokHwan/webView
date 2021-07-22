@@ -3,15 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment_Home">
+    tools:context=".Fragment_home">
 
-    <TextView
+    <WebView
+        android:id="@+id/web1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Color of 162B1E"
-        android:textColor="@color/white"
-        android:background="#162B1E"
         />
-
-
 </FrameLayout>

@@ -3,13 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment_4">
+    tools:context=".Fragment_Board">
 
-
-    <WebView
-        android:id="@+id/web4"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:text="게시판이 작성될 곳"
+        android:textColor="@color/white"
+        android:background="#162B1E"
         />
 
 </FrameLayout>

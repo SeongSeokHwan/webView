@@ -8,20 +8,20 @@
         android:title="Home"/>
 
     <item
-        android:id="@+id/page_scan"
+        android:id="@+id/page_people"
         android:enabled="true"
-        android:icon="@drawable/ic_baseline_qr_code_scanner_24"
-        android:title="Frame2"/>
-
-    <item
-        android:id="@+id/page_order"
-        android:enabled="true"
-        android:icon="@drawable/ic_order"
-        android:title="Frame3"/>
+        android:icon="@drawable/ic_baseline_people_alt_24"
+        android:title="People"/>
 
     <item
         android:id="@+id/page_add"
         android:enabled="true"
         android:icon="@drawable/ic_add"
-        android:title="Frame4"/>
+        android:title="Add"/>
+
+    <item
+        android:id="@+id/page_board"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_article_24"
+        android:title="Board"/>
 </menu>

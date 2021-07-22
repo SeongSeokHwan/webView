@@ -3,14 +3,8 @@ package com.example.webview;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -25,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottom_nav);
 
 
-        getSupportFragmentManager().beginTransaction().add(R.id.main_Frame, new Fragment_Home()).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.main_Frame, new Fragment_home()).commit();
 
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -34,16 +28,16 @@ public class MainActivity extends AppCompatActivity {
                 switch (menuItem.getItemId()) {
                     //item을 클릭시 id값을 가져와 FrameLayout에 fragment.xml띄우기
                     case R.id.page_home:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.main_Frame, new Fragment_Home()).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.main_Frame, new Fragment_home()).commit();
                         break;
-                    case R.id.page_scan:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.main_Frame, new Fragment_2()).commit();
-                        break;
-                    case R.id.page_order:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.main_Frame, new Fragment_3()).commit();
+                    case R.id.page_people:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.main_Frame, new Fragment_people()).commit();
                         break;
                     case R.id.page_add:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.main_Frame, new Fragment_4()).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.main_Frame, new Fragment_3()).commit();
+                        break;
+                    case R.id.page_board:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.main_Frame, new Fragment_Board()).commit();
                         break;
                 }
                 return true;
