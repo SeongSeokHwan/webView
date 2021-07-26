@@ -5,12 +5,10 @@
     android:layout_height="match_parent"
     tools:context=".Fragment_Board">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="게시판이 작성될 곳"
-        android:textColor="@color/white"
-        android:background="#162B1E"
+    <Button
+        android:id="@+id/temp_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         />
 
 </FrameLayout>
